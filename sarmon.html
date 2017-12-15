@@ -14,12 +14,13 @@
             <option value="maguro.html">まぐろ</option>
             <option value="sarmon.html">サーモン</option>
             <option value="ikura.html">いくら</option>
+            <option value="okt">オクトキャット</option>
         </select>
     </form>
     <script>
-    document.addEventListener('DOMContentLoad',function() {
+    document.addEventListener('DOMContentLoaded',function() {
         document.getElementById('isbn').addEventListener('change',function() {
-            location.href = 'https://nrtkkkkk.github.io/' + this.value;
+            location.href = this.value;
         },false);
     },false);
     </script>
