@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documents</title>
+</head>
+<body>
+    <form>
+        <label for="isbn">寿司</label>
+        <select id="isbn" name="isbn">
+            <option value="">---寿司ネタ---</option>
+            <option value="maguro.html">まぐろ</option>
+            <option value="sarmon.html">サーモン</option>
+            <option value="ikura.html">いくら</option>
+            <option value="okuto">オクトキャット</option>
+        </select>
+        <table border="1">
+            <tr>
+                <th>githubの使い方</th>
+            </tr>
+            <tr>
+                <td>ファイルの状態を確認</td><td>git status</td>
+            </tr>
+            <tr>
+                <td>ファイルを確認!</td><td>git add hello.html</td>
+            </tr>
+            <tr>
+                <td>ローカルリポジトリを作成する</td><td>git init</td>
+            </tr>
+            <tr>
+                <td>ローカルリポジトリのファイルをGitHubのリポジトリに送信</td><td>git push origin master</td>
+            </tr>
+            <tr>
+                <td>ローカルリポジトリにインデックスに追加したファイルを登録</td><td>git commit -m</td>
+            </tr>
+        </table>
+        <p>githubpageの作り方<br></p>
+        <p>リポジトリの作成　(プロジェクト)</p>
+        <p>1.ターミナルで下記を実行、ローカルのリポジトリを指定<br>
+            $ cd /path/to/local-repository<br></p>
+        <p>2.【リポジトリネーム】のブランチを制作<br>
+            $ git branch 【リポジトリネーム】<br></p>
+        <p>3.チェックアウトする<br>
+            $ git checkout 【リポジトリネーム】<br></p>
+        <p>リポジトリの作成　(ユーザー)</p>
+        <p>$ git clone https://github.com/【GitHubアカウント名】/【GitHubアカウント名】.github.io
+            
+            実行することでローカルにファイルが生成されています。
+            ファイル名：【GitHubアカウント名】.github.io
+            
+            実行の指定先を移動します。
+            $ cd 【GitHubアカウント名】<br></p>
+        <p>4.htmlを作成</p>
+        <p>ターミナルで下記を実行し、ローカルにhtmlファイルを生成します。
+            $ echo "Hello world" > index.html
+            
+            下記を実行して、ファイルをGitHubにコミットします。
+            $ git add --all
+            $ git commit -m "First commit"<br></p>
+        <p>5.GitHubへPush</p>
+        <p>ブランチをプッシュ
+            
+            （プロジェクト）
+            $ git push -u origin【リポジトリネーム】
+            
+            （ユーザー）
+            $ git push -u origin master<br></p>
+        <p>6.確認</p>
+        <p>プロジェクト
+            http://【ユーザーネーム】.github.io/【リポジトリネーム】
+            
+            ユーザー
+            http://【ユーザーネーム】.github.io<br></p>
+        
+        <p>githubpageの更新の仕方</p>
+        <p>$ cd /path/to/local-repository
+            $ echo "Hello GitHub Pages!" > index.html<br></p>
+        <p>ファイルの更新が終わったら、下記のように入力して変更をコミットしてください。
+            
+            $ git add --all
+            $ git commit -m "Update page"<br></p>
+        <p>先ほどと同じように、ユーザサイトならば「master」ブランチをプッシュしてください。
+            
+            $ git push -u origin master<br></p>
+        <p>プロジェクトサイトならば「gh-pages」ブランチをプッシュします。
+            
+            $ git push -u origin gh-pages</p>
+
+    </form>
+    <script>
+    document.addEventListener('DOMContentLoaded',function() {
+        document.getElementById('isbn').addEventListener('change',function() {
+            location.href = this.value;
+        },false);
+    },false);
+    </script>
+    <img src="./寿司ネタ/github.jpeg" alt="マグロの画像" id="ok">    
+</body>
+</html>
