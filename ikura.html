@@ -1,28 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script>
+            document.addEventListener('DOMContentLoaded',function(){
+                document.getElementById('isbn').addEventListener('change',function(){
+                    location.href = '' + this.value;
+                },false);
+            },false);
+            </script>
 </head>
 <body>
-    <form>
-        <label for="isbn">寿司</label>
-        <select id="isbn" name="isbn">
-            <option value="">---寿司ネタ---</option>
-            <option value>まぐろ</option>
-            <option value>サーモン</option>
-            <option value>いくら</option>
-        </select>
-    </form>
-    <script>
-    document.addEventListener('DOMContentLoad',function() {
-        document.getElementById('isbn').addEventListener('change',function() {
-            location.href = 'http:www.wings.msn.to/php/-/A-03' + this.value;
-        },false);
-    },false);
-    </script>
-<p><img src="C:\Users\narita takuma\Pictures\寿司ネタ/DJF3J-wUwAAaTKo.jpg"></p>
+        <form>
+                <label fpr "isbn">寿司</label>
+                <select id="isbn" name="isbn">
+                    <option value="">---寿司---</option>
+                    <option value="maguro.html">マグロ</option>
+                    <option value="salmon.html">サーモン</option>
+                    <option value="egg.html">たまご</option>
+                    
+                </select>
+            </form>
+            <img src="./寿司ネタ/DJF3J-wUwAAaTKo.jpg" alt="マグロの画像" width="599" height="335">
+   
 </body>
 </html>
