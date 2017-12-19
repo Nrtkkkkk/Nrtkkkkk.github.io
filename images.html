@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documents</title>
+</head>
+<body>
+    <form>
+        <label for="isbn">寿司</label>
+        <select id="isbn" name="isbn">
+            <option value="">---寿司ネタ---</option>
+            <option value="maguro.html">まぐろ</option>
+            <option value="sarmon.html">サーモン</option>
+            <option value="ikura.html">いくら</option>
+            <option value="okuto.html">オクトキャット</option>
+            <option value="images.html">お気に入り画像</option>
+        </select>
+    </form>
+    <script>
+window.addEventListener("load", function(){
+
+    // 画像インデックス
+    var imageIndex = 0;
+
+    // リスナー登録
+    document.getElementsByTagName("button")[0].addEventListener("click", function(){
+        // 画像イメージをインクリメント
+        if (imageIndex < 7) {
+            imageIndex++;
+        } else {
+            imageIndex = 0;
+        }
+        // 画像srcを変更
+        switch(imageIndex) {
+            case 0:
+                imageSrc = "./images/677375.jpg";
+                break;
+            case 1:
+                imageSrc = "./images/10f797a5.png";
+                break;
+            case 2:
+                imageSrc = "./images/677381.jpg";
+                break;
+            case 3:
+                imageSrc = "./images/CuDaXTaUIAAuNnl.jpg";
+                break;
+            case 4:
+                imageSrc = "./images/me_niha_me_wo.png";
+                break;
+            case 5:
+                imageSrc = "./images/smile.jpg";
+                break;
+            case 6:
+                imageSrc = "./images/syachiku.png";
+                break;
+            case 7:
+                imageSrc = "./images/otaku_otagei.png";
+                break;
+        }
+        document.getElementById("image").src = imageSrc;
+
+    }, false);
+});
+</script>
+</head>
+<body>
+<button>画像を変更</button>
+<p><img id ="image" src="./images/677375.jpg" alt="花" /></p>
+    </script>
+</body>
+</html>
