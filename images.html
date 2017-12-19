@@ -63,6 +63,11 @@ window.addEventListener("load", function(){
 
     }, false);
 });
+document.addEventListener('DOMContentLoaded',function() {
+        document.getElementById('isbn').addEventListener('change',function() {
+            location.href = this.value;
+        },false);
+    },false);
 </script>
 </head>
 <body>
