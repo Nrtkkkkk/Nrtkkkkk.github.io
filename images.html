@@ -63,11 +63,16 @@ window.addEventListener("load", function(){
 
     }, false);
 });
+document.addEventListener('DOMContentLoaded',function() {
+        document.getElementById('isbn').addEventListener('change',function() {
+            location.href = this.value;
+        },false);
+    },false);
 </script>
 </head>
 <body>
 <button>画像を変更</button>
-<p><img id ="image" src="./images/677375.jpg" alt="花" /></p>
+<p><img id ="image" src="./images/677375.jpg" alt="花" width="60%" height="60%"/></p>
     </script>
 </body>
 </html>
