@@ -36,6 +36,11 @@ window.addEventListener("load", function(){
     <script>
         document.getElementById("appName").innerHTML = navigator.appName;
         document.getElementById("appVersion").innerHTML = navigator.appVersion;
+        document.addEventListener('DOMContentLoaded',function() {
+        document.getElementById('isbn').addEventListener('change',function() {
+            location.href = this.value;
+        },false);
+    },false);
         var ua = navigator.userAgent.toLowerCase();
 var ver = navigator.appVersion.toLowerCase();
  
