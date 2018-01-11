@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documents</title>
+</head>
+<body>
+    <form>
+        <label for="isbn">^v^</label>
+        <select id="isbn" name="isbn">
+            <option value="">---色々---</option>
+            <option value="maguro.html">まぐろ</option>
+            <option value="sarmon.html">サーモン</option>
+            <option value="ikura.html">いくら</option>
+            <option value="okuto.html">オクトキャット</option>
+            <option value="images.html">お気に入り画像</option>
+            <option value="showUserAgent.html">ブラウザの判定</option>
+            <option value="windows.open.html">メソッド使い方</option>
+        </select>
+        <table border="1">
+            <tr>
+                <th>メソッドの使い方</th>
+            </tr>
+            <tr>
+                <td>新しい副ブラウザウィンドウを生成し、参照されているリソースをロードします。</td><td>windows.open()</td>
+            </tr>
+            <tr>
+                <td>ファイルディスクリプターをクローズする</td><td>close()</td>
+            </tr>
+            <tr>
+                <td>指定要素を（可能な場合）フォーカス状態にします。</td><td>focus()</td>
+            </tr>
+
+        </table>
+        <p>windows.openの説明<br></p>
+        <p>open() メソッドは、新しい副ブラウザウィンドウを生成します。それは、ファイルメニューから新しいウィンドウを選ぶのに似ています。引数 url は、新しいウィンドウにおいてフェッチしロードする URL を指定します。url が空文字列の場合は、メインウィンドウのデフォルトツールバーを持った新しい空白の空のウィンドウ（URL は about:blank がロードされます）が生成されます。
+                
+                リモート URL は、すぐにはロードされないことに注意してください。window.open() が戻り値を返すとき、ウィンドウは、常に about:blank を含んでいます。URL が実際にフェッチされるまでには猶予期間があり、現在のスクリプトブロックが実行を終えた後に開始されます。ウィンドウの生成と参照されるリソースの読み込みは、非同期に行われます。</p>
+        <p>closeの説明<br></p>
+            close() は、ファイルディスクリプターをクローズする。 そのディスクリプターは、どのファイルも参照していない状態になり、 再利用が可能になる。 そのファイルディスクリプターに関連づけられたファイルに かけられたレコードロック (fcntl(2) 参照) のうち、そのプロセスが保有しているものは、 (そのファイルディスクリプターがロック取得に利用されたか どうかによらず) すべて削除される。
+            fd が、対応するオープンファイル記述 (open file description) (open(2) 参照) を参照する最後のファイルディスクリプターだった場合、 オープンファイル記述に関連するリソースが解放される。 そのディスクリプターが、 unlink を使用して削除 (remove) されたファイルに対する最後の参照だった場合には、 そのファイルは削除 (delete) される。<br></p>
+        <p>focus説明<br></p>
+        :focus CSS 擬似クラス は、ユーザがキーボードを使って選択するか、マウスでアクティベートする（例：フォームの入力）かして、要素がフォーカスを受けたときに適用されます。
+        
+        構文<br></p>
+
+    </form>
+    <script>
+    document.addEventListener('DOMContentLoaded',function() {
+        document.getElementById('isbn').addEventListener('change',function() {
+            location.href = this.value;
+        },false);
+    },false);
+    </script>
+</body>
+</html>
