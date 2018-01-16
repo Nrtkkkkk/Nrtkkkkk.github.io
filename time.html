@@ -113,11 +113,10 @@
     }
 
     document.addEventListener('DOMContentLoaded',function() {
-    document.getElementById('isbn').addEventListener('change',function(){
-      location.href = this.value;
+        document.getElementById('isbn').addEventListener('change',function() {
+            location.href = this.value;
+        },false);
     },false);
-    
-  },false)
   </script>
 </body>
 
