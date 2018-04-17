@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQueryを使ったやつ</title>
+    <style>
+    p {
+        font-size: 30px;
+    }
+
+    .open {
+    width:50px;
+    margin: 10px 0;
+    padding: 10px;
+    background:#66CC99;
+    cursor: pointer;
+}
+#slideBox {
+    display:none;
+    padding: 10px;
+    border: 1px solid #BFFFBF;
+}
+
+body {
+    background-color: #d500ed;
+}
+    </style>
+</head>
+<body>
+    <p>jQueryを使ったやつ<br></p>
+
+    <p>1.マウスオーバー時の画像切替</p>
+    <a href="#"><img src="images/button_off.jpg" alt="ボタン" /></a>
+
+    <p>2.マウスオーバー時の画像の透明度変更<br></p>
+    <a href="#" class="oc"><img src="images/images.jpg" alt="ボタン" /><br></a>
+
+    <p>3.アコーディオンメニュー</p>
+    <dl id="accordion">
+        <dt><a href="">メニュー1</a></dt>
+        <dd>
+            <a href="#">サブメニュ</a>
+            <a href="#">サブメニュ</a>
+        </dd>
+        <dt><a href="">メニュー2</a></dt>
+        <dd>
+            <a href="#">サブメニュ</a>
+            <a href="#">サブメニュ</a>
+        </dd>
+        <dt><a href="">メニュー3</a></dt>
+        <dd>
+            <a href="#">サブメニュ</a>
+            <a href="#">サブメニュ</a>
+        </dd>
+    </dl>
+
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    
+
+        <script>
+$(function(){
+    $('a img').hover(function(){
+    $(this).attr('src', $(this).attr('src').replace('_off', '_on'));
+    }, function(){
+        if (!$(this).hasClass('currentPage')) {
+        $(this).attr('src', $(this).attr('src').replace('_on', '_off'));
+        }
+    });
+});
+
+$(function(){
+$(".oc").hover(function(){
+//$(a img).hover(function(){ ←すべてのリンク付き画像に適応
+    $(this).fadeTo("normal", 0.6); // マウスオーバーで透明度を60%にする
+    },function(){
+    $(this).fadeTo("normal", 1.0); // マウスアウトで透明度を100%に戻す
+    });
+});
+
+$(function() {
+    $('#accordion dd').hide();
+    $('#accordion dt a').click(function(){
+         $('#accordion dd').slideUp();
+         $(this).parent().next().slideDown();
+         return false;
+     });
+});
+
+        </script>
+
+<a href="http://happymondays.pecori.jp/jquery-sample/#">引用元：http://happymondays.pecori.jp/jquery-sample/#</a>
+</body>
+</html>

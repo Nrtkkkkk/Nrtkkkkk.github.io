@@ -1,0 +1,37 @@
+$(function() {
+    
+     // チェックボックスをチェックしたら発動
+     $('input[name="check"]').change(function() {
+    
+       // prop()でチェックの状態を取得
+       var prop = $('#prop').prop('checked');
+       // val()でチェックの状態を取得
+       var val = $('#val:checked').val();
+       // is()でチェックの状態を取得
+       var is = $('#is').is(':checked');
+    
+       // もしpropがチェック状態だったら
+       if (prop) {
+         // propでチェックと出力
+         $('#p01').text('propでチェック');
+       } else {
+         // テキストをリセット
+         $('#p01').text('');
+       }
+    
+       // もしvalがチェック状態だったら
+       if (val) {
+         $('#p02').text('valでチェック');
+       } else {
+         $('#p02').text('');
+       }
+    
+       // もしisがチェック状態だったら
+       if (is) {
+         $('#p03').text('isでチェック');
+       } else {
+         $('#p03').text('');
+       }
+    
+     });
+   });
