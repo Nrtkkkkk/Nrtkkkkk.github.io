@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 html { 
     background: url(images/maxresdefault.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
