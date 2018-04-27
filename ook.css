@@ -8,10 +8,17 @@ html {
     -o-background-size: cover;
     background-size: cover;
   }
+
+  body{
+    font-family: "Sawarabi Mincho";
+    margin: 0;
+    padding: 0;
+  }
 h1 {
     color: red;
     font-family: Monotype Corsiva;
-    font-size: 40px;
+    text-align: center;
+    font-size: 80px;
 }
 p {
     text-align: center;
@@ -127,4 +134,14 @@ header {
   
   ul {
       font-size: 40px;
+  }
+
+  .colors li a{
+    font-family: "Sawarabi Mincho";
+    color: white;
+    text-decoration-line: none;
+  }
+
+  .colors li a:hover{
+    text-decoration-line: underline;
   }
