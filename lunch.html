@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!doctype html>
 <html>
 
@@ -53,60 +53,4 @@ document.body.appendChild( new Text( document.cookie ) ) ;
     </table><input type="button" id="lunch" value="注文" onclick="lunchmenu()">
   </form>
 </body>
-=======
-<!doctype html>
-<html>
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta http-equiv="x-ua-compatible" content="IE=edge">
-	<title>cookie</title>
-</head>
-
-<body>
-	<!-- <p><button id="write">書き込み</button></p> -->
-	<!-- <p><button id="delete">削除</button></p> -->
-<hr>
-<script>
-// 書き込み
-function lunchmenu(){
-	if(lunchmenu_form.radio[0].checked == true){
-		hoge = "蒙古ラーメン"
-	}
-	if(lunchmenu_form.radio[1].checked == true){
-		hoge = "一楽ラーメン"
-}
-	if(lunchmenu_form.radio[2].checked == true){
-		hoge = "節骨ラーメン"
-	}
-	nyan="";
-	if(lunchmenu_form.check[0].checked == true){
-		nyan = nyan + "，大盛"
-	}
-	if(lunchmenu_form.check[1].checked == true){
-		nyan = nyan + "，半チャーハン"
-	}
-	if(lunchmenu_form.check[2].checked == true){
-		nyan = nyan + "，餃子"
-	}
-	if(lunchmenu_form.check[3].checked == true){
-		nyan = nyan + "，チャーシュー飯"
-	}
-document.cookie = "ご注文は" + hoge +"、"+　nyan + "なのじゃ～";
-}
-
-console.log( document.cookie ) ;
-document.body.appendChild( new Text( document.cookie ) ) ;
-</script>
-  <form name="lunchmenu_form" action="form_lunchmenu.html">
-    <table border="1">
-    <tr><td><input type="radio" name="radio" value="0">蒙古ラーメン</td><td><input type="checkbox" name="check" value="4">大盛<br></td></tr>
-    <tr><td><input type="radio" name="radio" value="1">一楽ラーメン</td><td><input type="checkbox" name="check" value="5">半チャーハン<br></td></tr>
-	<tr><td><input type="radio" name="radio" value="2">節骨ラーメン</td><td><input type="checkbox" name="check" value="6">餃子<br></td></tr>
-	<tr><td></td><td><input type="checkbox" name="check" value="7">チャーシュー飯<br></td></tr>
-    </table><input type="button" id="lunch" value="注文" onclick="lunchmenu()">
-  </form>
-</body>
->>>>>>> f28b74080acea623d8db9511fedcc9234c742833
 </html>
