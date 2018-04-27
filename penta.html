@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>課題</title>
+    <link rel="stylesheet" href="ook.css">
+</head>
+<body background="../images/maxresdefault.jpg"></body>
+<body>
+        <h1>好きなバンド</h1>
+        <header>
+                <div id="nav-drawer">
+                    <input id="nav-input" type="checkbox" class="nav-unshown">
+                    <label id="nav-open" for="nav-input"><span></span></label>
+                    <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                    <div id="nav-content">
+                            <aside id="sidebar" class="scroll">
+                                    <nav id="global-nav">
+                                        <ul>
+                                            <li><a href="kadai01.html">SID</a></li>
+                                            <li><a href="gaze.html">the GazettE</a></li>
+                                            <li><a href="rsi.html">R指定</a></li>
+                                                </ul>
+                                    </nav>
+                                </aside>
+                            </div>
+                </div>
+              </header>
+
+            <h2>ペンタゴン</h2>
+
+            <p>
+                    <img id="gazo" onclick="changeIMG()" src="images/201503221_pentagon.jpg"
+                    width="660" height="440" border="0" alt="">
+                 
+                 
+                 <script>
+                 
+                 //画像を配列に格納する
+                 var img = new Array();
+                 
+                 img[0] = new Image();
+                 img[0].src = "images/201503221_pentagon.jpg";
+                 img[1] = new Image();
+                 img[1].src = "images/v3.jpg";
+                 img[2] = new Image();
+                 img[2].src=  "images/z.jpg";
+                 img[3] = new Image();
+                 img[3].src = "images/pl.jpg";
+                 img[4] = new Image();
+                 img[4].src = "images/blitz2.jpg";
+                 
+                 //画像番号用のグローバル変数
+                 var cnt=0;
+                 
+                 //画像切り替え関数
+                 function changeIMG(){
+                   
+                   //画像番号を進める
+                   if (cnt == 4)
+                   { cnt=0; }
+                   else
+                   { cnt++; }
+                   
+                   //画像を切り替える
+                   document.getElementById("gazo").src=img[cnt].src;
+                 }
+                 
+                 </script>
+                 </p>
+                        
+                <p>vocal  千吊</p>
+                <p>Guitar  ゆとり</p>
+                <p>Guitar 拓</p>
+                <p>Bass  眠花</p>
+                <p>Drum  篤輝</p><br>
+                <p>好きな曲　「トゥーンワールド」</p>
+</body>
+</html>
