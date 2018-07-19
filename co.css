@@ -1,0 +1,413 @@
+header {
+    text-align: right;
+}
+ 
+p1 a {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+ 
+nav ul li {
+    display: inline-block;
+    margin-right: 25px;
+    vertical-align: center;
+}
+ .video-wrap {
+    position: relative;
+  }
+  #video iframe{
+    position: fixed;
+    z-index: -1;
+    top:30%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+  .add{
+      text-align: center;
+      font-size: 200%;
+  } 
+
+  .main{
+      max-width: 980;
+      margin: auto;
+      text-align: center;
+  }
+
+
+    .example {
+        position: relative;
+        }
+      
+      .example p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        margin:0;
+        padding:0;
+        /*文字の装飾は省略*/
+        }
+      
+      .example img {
+        width: 100%;
+        }
+  
+  .example img {
+    width: 100%;
+    }
+    .ass{
+        font-size: 150%;    
+    }
+
+.oo ll{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.occ {
+    width: 300px;
+    height: 400px;
+    background: white;
+}
+
+.logo{
+    text-align: left;
+}
+.rsample2{
+    position:relative;
+    width:300px;
+}
+.rsample2 span{
+    position:absolute;
+    bottom:30px;
+    right:20px;
+    width:100px;
+}
+.rsample2 img{
+    width:300px;
+}
+/* スタイル適当です */
+.nav {
+    display: table;
+    width: 100%;
+    background: #FFF;
+}
+.nav__item {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.nav__item + .nav__item {
+    border-left: 1px solid #CCC;
+}
+.nav__item a {
+    display: block;
+    padding: 15px 0;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+/* 体験授業
+-----------------------------------------------*/
+.taikenCont{
+	background:url(/img/oc/bg_dot.gif) repeat 0 0;
+}
+.courseBox{
+	width:980px;
+	margin:0 auto;
+	padding-top:52px;
+	background:url(/img/oc/bg_taiken_illust.png) no-repeat 0 49px;
+}
+.courseBox h2{
+	text-align:center;
+}
+.courseBox .innerCont{
+	margin-top:40px;
+}
+.courseBox .courseTit{
+	position:relative;
+}
+.courseTit li{
+    list-style: none;
+	position:absolute;
+}
+.courseTit li.system{ top:-17px; left:-16px; }
+.courseTit li.business{ top:-17px; left:320px; }
+.courseTit li.design{ top:-17px; left:654px; }
+
+.courseBox .innerCont .add{
+    list-style: none;
+	margin-top:-10px;
+}
+.courseBox .innerCont .add li{
+	padding-left: 1.3em;
+	text-indent: -1.3em;
+	font-size:12px;
+	padding-bottom:3px;
+}
+.courseBox .innerCont .add li a{
+    text-decoration: underline;
+}
+
+.taikenList{
+	width:1005px;
+	margin-right:-25px;
+	overflow:hidden;
+	clear:both;
+}
+
+.taikenList > li{
+	width:310px;
+	background:#fff;
+	border-radius:8px;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	box-shadow:rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+	-webkit-box-shadow:rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+	-moz-box-shadow:rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+	overflow:hidden;
+	float:left;
+	margin:0 25px 30px 0;
+}
+.taikenList li .title{
+	position:absolute;
+	left:-16px;
+	top:-17px;
+}
+.taikenList li .img{
+	width:296px;
+	margin:7px 7px 0 7px;
+}
+.taikenList li p{
+	color:#666;
+	margin:16px 20px 0;
+	letter-spacing:0.5px;
+	text-align:justify;
+}
+.taikenList li p span{
+	display:block;
+	font-weight:bold;
+	color:#333;
+	margin:4px 0 -3px;
+}
+.taikenList li dl{
+	margin:8px 20px 15px;
+	background:url(/img/oc/line_dot_1.gif) repeat-x 0 0;
+	padding-top:14px;
+}
+.taikenList li dt{
+	margin-bottom:4px;
+}
+.taikenList li dl li{
+	font-weight:bold;
+	line-height:1.4;
+}
+.taikenList li dl li span{
+	font-size:12px;
+	font-weight:normal;
+}
+.qanda {
+    max-width: 980px;
+    margin: auto;
+}
+.qanda p{
+    font-weight: bold;
+    font-size: 25px;
+}
+.qanda span{
+    padding-right: 20px;
+}
+h2{
+    text-align: center;
+}
+.qanda .ques{
+    color: #0054a7;
+
+}
+.qanda .anws{
+    color: #FE6666;
+}
+#ocKv{
+	margin-top:70px;
+	background:url(/img/oc/bg_kv.png) no-repeat center 0;
+	height:407px;
+}
+#ocKv .innerCont{
+	width:980px;
+	margin:0 auto;
+	position:relative;
+}
+#ocKv h1{
+	text-align:center;
+	padding-top:66px;
+}
+#ocKv p{
+	position:absolute;
+	right:190px;
+	top:297px;
+	font-size:13px;
+	font-weight:bold;
+	letter-spacing:1px;
+	text-align:center;
+	line-height:1.4;
+	width:81px;
+}
+#ocKv p span{
+	font-size:24px;
+	letter-spacing:0;
+}
+/* 三大特典
+-----------------------------------------------*/
+.tokutenBox{
+	width:974px;
+	padding:0 3px 40px;
+	margin:15px auto 0;
+	background:url(/img/oc/bg_tokuten.png) no-repeat 0 39px;
+	min-height:601px;
+}
+.tokutenBox h2{
+	text-align:center;
+}
+.tokutenBox ul{
+	overflow:hidden;
+	clear:both;
+    margin-top:34px;
+    display: flex;
+}
+.tokutenBox li{
+    list-style: none;
+	width:264px;
+	float:left;
+	padding:0 29px 0 30px;
+	background:url(/img/oc/line_dot_2.gif) repeat-y 0 0;
+}
+.tokutenBox li:first-child{
+	background:none;
+}
+.tokutenBox li .tokutenTit{
+	text-align:center;
+}
+.tokutenBox li h3{
+	font-size:22px;
+	font-weight:bold;
+	line-height:1.3;
+	padding:16px 0 6px;
+	height:59px;
+	display:table-cell;
+	vertical-align:middle;
+}
+.tokutenBox li h3 small{
+	font-size:13px;
+}
+.tokutenBox li h3 span{
+	color:#0054a7;
+}
+.tokutenBox li p{
+	color:#666;
+	letter-spacing:0.5px;
+}
+.tokutenBox li p span{
+	font-size:12px;
+}
+.tokutenBox li a{
+	font-weight:bold;
+	background:url(/img/oc/icn_arrow.png) no-repeat 0 5px;
+	padding:0 0 0 17px;
+	color:#333;
+	display:inline-block;
+	margin-top:4px;
+	text-decoration:underline;
+}
+.kyan{
+    text-align: center;
+    font-size: 45px;
+}
+.schedule{
+	max-width: 980px;
+	margin:auto; 
+}
+.schedule2 h3{
+	margin-top:-75px;
+	margin-left: 100px;
+}
+.schedule2 p{
+	margin-left: 100px;
+	margin-top: -10px;
+}
+div.mousi{
+    width: 80%;
+    margin-left: auto;
+}
+footer{
+	background:#fff;
+}
+.footBnr{
+	width:980px;
+	margin:0 auto;
+	padding:35px 0;
+	clear:both;
+	overflow:hidden;
+}
+.footBnr li{
+	float:left;
+}
+.footBnr li:first-child{
+	margin-right:40px;
+}
+
+
+.mclCont{
+	background:#9da4aa;
+	color:#fff;
+	padding:30px 0 50px;
+}
+.mclCont p{
+	font-size:12px;
+}
+.mclCont p img{
+	vertical-align:-16px;
+}
+.mclCont ul{
+	overflow:hidden;
+	clear:both;
+	margin-top:10px;
+}
+.mclCont li{
+	float:left;
+	margin-left:12px;
+}
+.mclCont li:first-child{
+	margin:0;
+}
+.mclCont ul a{
+	font-size:12px;
+	display:inline-block;
+	color:#fff;
+	background:url(/common/img/icn_footer_mcl_arrow.png) no-repeat 0 3px;
+	padding-left:11px;
+}
+
+/*30-------------------------*/
+.mclCont .inner{
+	overflow:hidden;
+	clear:both;
+}
+.footBox{
+	width:720px;
+	float:left;
+}
+.footBox ul:last-child{
+	margin-top:1px;
+}
+.footBox ul li:nth-of-type(1){ width:160px; }
+.footBox ul li:nth-of-type(2){ width:135px; }
+.footBox ul li:nth-of-type(3){ width:205px; }
+.bnrBox{
+	width:248px;
+	float:right;
+	margin-top:4px;
+}
