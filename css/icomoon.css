@@ -1570,45 +1570,14 @@
   content: "\ea80";
 }
 
-img {
-  width:  180px;       /* ※縦横を同値に */
-  height: 180px;       /* ※縦横を同値に */
-  text-align: center;
-}
-
 .ko{
   border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
   font-size: 40px;
   text-align: center;
   color: black;
+  width:  180px;
+  height: 180px;
 }
-
-
-.ii{
-  width:  180px;       /* ※縦横を同値に */
-  height: 180px;       /* ※縦横を同値に */
-  text-align: center;
-  display: inline-block; 
-}
-
-.p1{
-  font-size: 20px;
-}
-
 .koko{
-  width:  450px;       /* ※縦横を同値に */
-  height: 250px;       /* ※縦横を同値に */
-  text-align: center;
-}
-
-.kokoko{
-  width:  450px;       /* ※縦横を同値に */
-  height: 350px;       /* ※縦横を同値に */
-  text-align: center;
-}
-
-.kok{
-  width:  450px;       /* ※縦横を同値に */
-  height: 350px;       /* ※縦横を同値に */
   text-align: center;
 }
